@@ -1,0 +1,16 @@
+apt-packages
+common-dirs
+need-root
+roboto-mono
+rust
+wezterm
+firefox-nightly
+bat
+dotfiles
+bob-nvim
+nvm-node
+npm-packages
+cargo-packages
+pyenv
+jotter
+hyprlock
