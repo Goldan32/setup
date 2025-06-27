@@ -5,6 +5,7 @@
 dirs_to_create=(\
     "$HOME/.local/programs" \
     "$HOME/.local/bin" \
+    "$HOME/.screenshots" \
 )
 
 for dir_to_create in "${dirs_to_create[@]}"; do
