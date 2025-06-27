@@ -1,4 +1,4 @@
 apt-packages
-need-root
+rust
 dotfiles
-hyprland
+need-root
