@@ -35,6 +35,7 @@ if ! (( ${#to_be_installed[@]} )); then
     exit 0
 fi
 
+sudo apt update
 for pkg in "${to_be_installed[@]}"; do
     sudo apt install -y "$pkg" || exit 1
 done
