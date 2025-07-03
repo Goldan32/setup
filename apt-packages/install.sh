@@ -20,6 +20,7 @@ apt_packages=(\
     "llvm" \
     "bzip2" \
     "libsqlite3-dev" \
+    "dunst" \
 )
 
 to_be_installed=()
