@@ -4,6 +4,7 @@ bob-nvim
 cargo-packages
 common-dirs
 corporate-git
+default-shell
 dotfiles
 dunst
 firefox-nightly
