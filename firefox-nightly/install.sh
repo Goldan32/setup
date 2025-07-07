@@ -13,6 +13,8 @@ fi
 # Temporary download location
 TMP_FILE=$(mktemp)
 
+mkdir -p "$TARGET_DIR"
+
 # Download Firefox Nightly
 curl -sL "https://download.mozilla.org/?product=firefox-nightly-latest-ssl&os=linux64&lang=en-US" -o "$TMP_FILE"
 
