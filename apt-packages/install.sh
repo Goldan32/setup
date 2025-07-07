@@ -20,6 +20,7 @@ apt_packages=(\
     "llvm" \
     "bzip2" \
     "libsqlite3-dev" \
+    "jq" \
 )
 
 to_be_installed=()
