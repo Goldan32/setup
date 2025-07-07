@@ -21,6 +21,7 @@ apt_packages=(\
     "bzip2" \
     "libsqlite3-dev" \
     "jq" \
+    "acpi" \
 )
 
 to_be_installed=()
