@@ -10,6 +10,7 @@ fi
 PYENV_DIR="$HOME/.local/programs/pyenv"
 
 curdir="$(pwd)"
+rm -rf "$PYENV_DIR"
 git clone https://github.com/pyenv/pyenv.git "$PYENV_DIR"
 cd "$PYENV_DIR" \
     && src/configure \

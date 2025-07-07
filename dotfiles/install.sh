@@ -8,6 +8,7 @@ if [ "$(readlink "$HOME/.zshrc")" == ".dotfiles/.zshrc" ]; then
 fi
 
 curdir="$(pwd)"
+rm -rf "$HOME/.dotfiles"
 git clone https://github.com/Goldan32/dotfiles.git "$HOME/.dotfiles"
 cd "$HOME/.dotfiles" || exit 1
 stow --no-folding .

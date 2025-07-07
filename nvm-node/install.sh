@@ -21,6 +21,7 @@ elif [ -f "$NVM_DIR/nvm.sh" ]; then
     exit 0
 fi
 
+rm -rf "$HOME/.local/programs/nvm"
 git clone https://github.com/nvm-sh/nvm.git "$HOME/.local/programs/nvm"
 install_lts
 
