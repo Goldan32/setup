@@ -5,11 +5,14 @@
 NVM_DIR="$HOME/.local/programs/nvm"
 
 install_lts() {
-    export NVIM_DIR
+    export NVM_DIR
     . "$NVM_DIR/nvm.sh"
     nvm install --lts
     nvm alias default lts/*
 }
+
+export NVM_DIR
+. "$NVM_DIR/nvm.sh"
 
 # Maybe have nvm but not node
 if which node > /dev/null; then

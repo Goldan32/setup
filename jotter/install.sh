@@ -9,6 +9,8 @@ if [ -f "$INSTALL_DIR/target/release/jotter" ]; then
     exit 0
 fi
 
+cargo_to_path
+
 curdir="$(pwd)"
 rm -rf "$INSTALL_DIR"
 git clone https://github.com/Goldan32/jotter "$INSTALL_DIR"

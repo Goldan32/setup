@@ -4,16 +4,18 @@
 
 which dunst > /dev/null || sudo apt install -y dunst
 
-dunst_status="$(systemctl --user is-active dunst)"
 
-if [ "$dunst_status" == "active" ]; then
+if [ "$(systemctl --user is-active dunst)" == "active" ]; then
     log "Success (already done)"
     exit 0
 fi
 
+systemctl --user disable swaync
+systemctl --user mask swaync
+systemctl --user daemon-reload
 systemctl --user enable --now dunst.service
 
-if [ "$dunst_status" == "active" ]; then
+if [ "$(systemctl --user is-active dunst)" == "active" ]; then
     log "Success"
     exit 0
 fi

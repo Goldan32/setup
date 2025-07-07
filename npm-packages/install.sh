@@ -13,6 +13,9 @@ packages=(\
     "shellcheck" \
 )
 
+NVM_DIR="$HOME/.local/programs/nvm"
+. "$NVM_DIR/nvm.sh"
+
 to_be_installed=()
 
 for pkg in "${packages[@]}"; do

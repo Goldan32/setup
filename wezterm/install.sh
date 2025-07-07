@@ -19,6 +19,8 @@ if [ -f "$HOME/.local/programs/wezterm/target/release/wezterm" ]; then
     exit 0
 fi
 
+cargo_to_path
+
 # Build it
 current_dir="$(pwd)"
 cd "$HOME/.local/programs" || exit 1

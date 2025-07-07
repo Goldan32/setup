@@ -23,6 +23,8 @@ if (( ${#to_be_installed[@]} == 0 )); then
     exit 0
 fi
 
+cargo_to_path
+
 if cargo install "${to_be_installed[@]}"; then
     log "Success"
     exit 0
